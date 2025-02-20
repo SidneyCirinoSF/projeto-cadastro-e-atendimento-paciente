@@ -1,0 +1,165 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* Imagem do formulário */
+.form-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Formulário */
+.form {
+    flex: 1;
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inputs .input-box {
+    margin-bottom: 15px;
+}
+
+.inputs label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputs input:focus {
+    border-color: #007BFF;
+}
+
+.gender-inputs {
+    margin-top: 20px;
+}
+
+.gender-title h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form {
+        padding-left: 0;
+    }
+
+    .form-image {
+        margin-bottom: 20px;
+    }
+}
