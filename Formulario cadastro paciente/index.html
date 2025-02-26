@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
             <img src="assets/img/undraw_forms_1ciz.svg">
         </div>
         <div class="form">
-            <form action="#">
+            <form id="formCadastroPaciente" action="#">
                 <div class="form-header">
                     <div class="title">
                         <h1>CADASTRO</h1>
@@ -25,27 +25,32 @@
                 <div class="inputs">
                     <div class="input-box">
                         <label for="Nome">Nome</label>
-                        <input id="Nome" type="text" name="Nome" placeholder="Digite seu nome completo" required>
+                        <input id="Nome" type="text" name="Nome" placeholder="Digite seu nome completo">
+                        <span id="nomeErro"></span>
                     </div>
 
                     <div class="input-box">
                         <label for="CPF">CPF</label>
-                        <input id="CPF" type="text" name="CPF" placeholder="xxx.xxx.xxx-xx" required>
+                        <input id="CPF" type="text" name="CPF" placeholder="xxx.xxx.xxx-xx">
+                        <span id="cpfErro"></span>
                     </div>
 
                     <div class="input-box">
                         <label for="DataNasc">Data de nascimento</label>
-                        <input id="DataNasc" type="date" name="DataNasc" placeholder="xx/xx/xxxx" required>
+                        <input id="DataNasc" type="date" name="DataNasc" placeholder="xx/xx/xxxx">
+                        <span id="dataNascErro"></span>
                     </div>
 
                     <div class="input-box">
                         <label for="Celular">Celular</label>
-                        <input id="Celular" type="tel" name="Celular" placeholder="(xx) xxxxx-xxxx" required>
+                        <input id="Celular" type="tel" name="Celular" placeholder="(xx) xxxxx-xxxx">
+                        <span id="celularErro"></span>
                     </div>
 
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail">
+                        <span id="emailErro"></span>
                     </div>
 
                     <div class="gender-inputs">
@@ -68,10 +73,12 @@
                 </div>
 
                 <div>
-                    <button><a href="#">Cadastrar</a></button>
+                    <button type="submit">Cadastrar</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <script src="./assets/javascript/index.js"></script>
 </body>
 </html>

@@ -17,6 +17,10 @@ body {
     padding: 0;
 }
 
+span {
+    color: red;
+}
+
 /* Container principal */
 .container {
     display: flex;
